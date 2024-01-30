@@ -1,2 +1,7 @@
 # Calculadora
-Calculadora feita com HTML, CSS e Javascript, como parte de um projeto de estudos do SENAC
+
+
+Calculadora criada na aula de Front-End no Senac
+
+
+<img src="/assets/Calculadora.jpg">

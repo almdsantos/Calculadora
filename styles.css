@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+}
+  
+  .block {
+    position: relative;
+    margin: 10vh auto auto auto;
+    width: 280px;
+    height: 490px;
+    background: linear-gradient(0deg, #000, #272727);
+  }
+  
+  .block:before, .block:after {
+    content: '';
+    position: absolute;
+    left: -4px;
+    top: -4px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+      #0000ff, #00ff00,#ffff00, #ff0000);
+    background-size: 400%;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    z-index: -1;
+    animation: steam 20s linear infinite;
+  }
+  
+  @keyframes steam {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .block:after {
+    filter: blur(50px);
+  }
+
+  table {
+    background-color: #000;
+    margin: 10vh auto auto auto;
+    width: 280px;
+    height: 488px;
+    padding: 3px;
+}
+
+#celula{
+    height: 95px;
+    padding-left: 1.5px;
+    padding-right: 2px;
+}
+
+#celula div {
+    background-color: #646464;
+    height: 98%;
+    margin: 1%;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5)
+}
+
+#celula h3 {
+    width: 100%;
+    height: 100%;
+    font-size: 60px;
+    position: relative;
+    top: 10px;
+    left: -100px;
+}
+
+.celula{
+    padding: 1%;
+}
+
+.button {
+    background-color: #d9d9d9;
+    filter:blur(0.5px);
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+    border: 1px solid black;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 1)
+}
+
+h1, h2 {
+    text-align: center;
+    color: #fff;
+    
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 35px;
+    
+}
